@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<!--
+	Template
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Carbon Tracker</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<noscript><link rel="stylesheet" href="styles/noscript.css" /></noscript>
+		<!-- Iconos de Bootstrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+		<script src="/js/main.js" defer></script>
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- Intro -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Carbon Tracker</h1>
+							<p class="major">¿Sabías que cada paso que das, cada alimento que disfrutas y hasta cada mascota que abrazas tiene un efecto en nuestras emisiones de carbono? ¡Es hora de descubrirlo! Nuestro simulador te permitirá calcular tu <a href="https://www.greenpeace.org/mexico/blog/9386/huella-de-carbono/">Huella de Carbono</a> de manera divertida y educativa.</p>
+							<ul class="actions stacked">
+								<button id="btnsimulador" class="button big wide smooth-scroll-middle"> <a href="#simulador"> Get Started </a></button>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="https://images.pexels.com/photos/8106783/pexels-photo-8106783.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+						</div>
+					</section>
+				<!-- Quote  -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>"La naturaleza nos habla, pero es nuestra responsabilidad escucharla y actuar en consecuencia."</h2>
+							<p>- Greta Thunberg</p>
+						</div>
+					</section>
+				<!-- Classes -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>¡Bienvenido/a al emocionante mundo de Carbon Tracker!</h2>
+							<p>Prepárate para un viaje lleno de descubrimientos ecológicos mientras exploras cómo tus elecciones diarias impactan nuestro planeta.
+							</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<span><i class="bi bi-globe"></i></span>
+									<h3>Transporte</h3>
+									<p>Imagina conducir por la ciudad en tu transporte favorito, ¡pero espera! ¿Te has preguntado cuánto CO2 estás liberando al ambiente? Nuestro simulador te mostrará cuántas toneladas de carbono estás dejando atrás en el camino.</p>
+								</section>
+								<section>
+									<span><i class="bi bi-egg-fried"></i></span>
+									<h3>Alimentos</h3>
+									<p>Ahora, pasemos a la deliciosa comida. ¿Eres amante de los mariscos, las carnes asadas o las deliciosas pizzas? Descubre cuánto CO2 generas al disfrutar de tus comidas favoritas. ¡Te sorprenderás de los números!</p>
+								</section>
+								<section>
+									<span><i class="bi bi-emoji-smile"></i></span>
+									<h3>Mascotas</h3>
+									<p>Y no olvidemos a nuestras queridas mascotas. Desde perros hasta gatos, nuestras adorables compañías también tienen su propio impacto ambiental. ¿Sabías que la alimentación de tus mascotas puede contribuir a las emisiones de carbono? ¡Averigua cuánto están aportando tus peludos amigos!.</p>
+								</section>
+							</div>	
+						</div>		
+					</section>
+
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Calculadora de huella de carbono</h2>
+							<p>Fianalmente, aquí tienes una herramienta que te ayudará a saber más sobre tus <em>emisiones de CO2 equivalente</em>. No dudes en usarla.</p>
+
+								<!-- Form -->
+									<section id="simulador">
+										<header>
+											<h3>¡Empieza a calcular tu huella de carbono!</h3>
+										</header>
+										<div class="content">
+
+											<form method="post" action="#">
+												<div class="fields">
+													<div class="field half">
+														<label for="name">Nombre</label>
+														<input type="text" name="name" id="usrnombre" value="" />
+													</div>
+													<div class="field half">
+														<label for="country">País</label>
+														<select name="department" id="department">
+															<option value="">- Category -</option>
+															<option value="1">México 🌵</option>
+															<option value="2">Argentina ☀️</option>
+															<option value="3">Colombia 💃</option>
+															<option value="4">Perú 🪅</option>
+														</select>
+													</div>
+													<div class="field half">
+														<label for="edad">Edad</label>
+														<input type="number" name="edad" id="usredad" value="" />
+													</div>
+													<div class="field half">
+														<label for="conducir">🚗 Número de km diarios para ir a la escuela/trabajo</label>
+														<input type="number" name="numkm" id="usrkm" value="" />
+													</div>
+
+													<div class="field">
+														<label for="mascotas">¿Tienes como mascota algún perro o gato?</label>
+													</div>
+													<div class="field third">
+														<button class="btn" id="mascotassiperro">🐶 Sí tengo un perro</button>
+													</div>
+													<div class="field third">
+														<button class="btn" id="mascotassigato">🐱 Sí tengo un gato</button>
+													</div>
+													<div class="field third">
+														<button class="btn" id="mascotasno">❌ No tengo mascotas</button>
+													</div>
+													<!--
+													<section style="margin-left: 15%;" class="wrapper style1 align-center">
+														<div id="campoMascotas" style="display: none;">
+															<div class="field">
+															<label for="numPerros">Número de perros:</label>
+															<input type="number" name="numPerros" id="numPerros"  value="" />
+															</div>
+															<div class="field">
+															<label for="numGatos">Número de gatos:</label>
+															<input type="number" name="numGatos" id="numGatos"  value="" />
+															</div>
+														</div>
+													</section>
+													-->
+
+													<div class="field">
+														<label for="comida">¿Cuál es tu comida favorita?</label>
+													</div>
+													<div class="field third">
+														<button class="btn" id="comidapizza"> 🍕 Pizza</button>
+													</div>
+													<div class="field third">
+														<button class="btn" id="comidasalmon"> 🍣 Salmón </button>
+													</div>
+													<div class="field third">
+														<button class="btn" id="comidacarne"> 🥩 Carne </button>
+													</div>
+													<div class="field">
+														<h3>----------  Descubre tus resultados  ---------</h3>
+														<button class="btn" id="btn-inicio">Calcular ahora</button>
+													</div>
+											</form>
+											
+										</div>
+									</section>
+							<header>
+								<hr>
+								<h3>🌿¡Obten recomendaciones sobre cómo reducir tu huella de carbono en cada una de las tres categorías!🌿</h3>
+							</header>
+							<section>
+								<br>
+								<div class="field half">
+									<label for="numact">Número de recomendaciones que quieres saber</label>
+										<select name="numact" id="numact">
+											<option value="">Selecciona una opción</option>
+											<option value=1>1</option>
+											<option value=2>2</option>
+											<option value=3>3</option>
+											<option value=4>4</option>
+											<option value=5>5</option>
+										</select>
+								</div>
+								<br>
+								<div class="field half">
+									<label for="cfclass">Categoría</label>
+										<select name="cfclass" id="cfclass">
+											<option value="">Selecciona una opción</option>
+											<option value="transporte">Transporte 🚗</option>
+											<option value="alimentacion">Alimentación 🍽️</option>
+											<option value="mascotas">Mascotas 🐾</option>
+										</select>
+								</div>
+								<br>
+								<div class="field">
+									<h3>----------  Descubre las recomendaciones  ---------</h3>
+									<button class="btn" id="btn-acciones">Ver recomendaciones</button>
+								</div>
+							</section>
+						</div>		
+					</section>
+					<!-- Resultados -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2 id="resultado"></h2>
+							<p id="resultadoimpacto"></p>
+							<p id="avrgpais"></p>
+							<hr>
+							<h3 style="color:#47D3E5" id="temperatura"><strong></strong></h3>
+							<br>
+							<h2>"No podemos resolver el cambio climático con las mismas mentes que lo crearon. Necesitamos pensar de manera diferente y actuar con valentía." 🥇</h2>
+							<p>- Albert Einstein</p>
+							<hr>
+						</div>
+					</section>
+
+				
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 bi bi-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 bi bi-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon brands style2 bi bi-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Carbon Tracker. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	</body>
+</html>
